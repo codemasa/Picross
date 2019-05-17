@@ -1,0 +1,14 @@
+PICROSS
+
+  Cell (3 States):
+    Marked (Filled/Mark/Xed)
+    Unmarked
+
+  Row/column (3 States):
+    Unfilled
+    Filled
+    Partial
+
+  Board (2 States):
+    Right (All rows and columns correct)
+    Wrong
