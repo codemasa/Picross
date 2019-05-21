@@ -25,4 +25,14 @@ public class Grid{
       }
 
     }
+
+    public Cell getCell(int x, int y){
+      if (x >= 0 && x < sizeX && y >= 0 && y < sizeY){
+        return grid[x][y];
+      }
+      else{
+        return null;
+      }
+    }
+
 }

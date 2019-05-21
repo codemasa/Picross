@@ -28,7 +28,23 @@ public class Clue{
   }
 
   public void generateClue(Grid grid){
-  
+    int temp = 0;
+    int x = 0;
+    int length = (this.type == Type.ROW ? grid.sizeX : grid.sizeY);
+    int y = this.position;
+    while (x < length){
+      Cell curCell = grid.getCell(this.type == Type.ROW ? x : y, this.type == Type.ROW ? y : x);
+      if(curCell.getState() == Cell.Marking.EMPTY){
+        temp++;
+      }
+      else if(temp > 0){
+        this.values.add(temp);
+      }
+      x++;
+    }
+    if(temp > 0){
+      this.values.add(temp);
+    }
   }
 
 }
