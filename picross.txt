@@ -1,6 +1,6 @@
 PICROSS
 
-  Cell (3 States):
+  Cell (4 States):
     Marked (Filled/Mark/Xed)
     Unmarked
 
@@ -12,3 +12,11 @@ PICROSS
   Board (2 States):
     Right (All rows and columns correct)
     Wrong
+
+  Board needs:
+    Background
+    Timer
+    Grid
+    Cells
+    Dividers
+    
